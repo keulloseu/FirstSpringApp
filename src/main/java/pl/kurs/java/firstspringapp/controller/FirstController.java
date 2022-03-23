@@ -19,6 +19,7 @@ public class FirstController {
     @PostMapping( "/welcome/execute")
     public String execute(ModelMap map, @ModelAttribute("myForm") MyForm form) {
         map.addAttribute("name", form.getName());
+//        map.addAttribute("name", form.getName());
         return "dupa_execute";
     }
 
